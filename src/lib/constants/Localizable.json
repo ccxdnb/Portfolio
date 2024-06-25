@@ -1,0 +1,23 @@
+{
+    "mainTitle": "Overthinking, overanalyzing separates the body from the mind.",
+    "about": {
+        "title": "About Me",
+        "description": "I’m Joaquin Wilson, an iOS developer based in Copenhagen, Denmark.My journey began when i was a kid by breaking my toys just to see what was inside which later fueled  my passion for technology led me to software development. I've developed expertise in various programming languages and frameworks, contributing to many projects. Bellow are some of my latest personal playground."
+    },
+    "misc": {
+        "title": "Other Interests",
+        "description": "Besides coding, I'm a dedicated sound designer and music producer, merging my technical skills with my love for music.<br><br>This blend fuels my creativity, driving me to craft innovative solutions in both fields, whether it's seamless user experiences or immersive soundscapes."
+    },
+    "techs": {
+        "title": "Technologies",
+        "description": "I thrive on working with cutting-edge technologies that redefine the boundaries of innovation. My primary focus is on iOS development, where I leverage tools like Xcode, Swift, and various frameworks to build robust and user-friendly applications./n I am particularly passionate about augmented reality (AR) and artificial intelligence (AI). AR fascinates me with its potential to create immersive and interactive experiences, transforming the way users interact with digital content. AI, on the other hand, opens up endless possibilities for intelligent and adaptive systems, enhancing user experiences with personalized and predictive functionalities./n Game development is another area that excites me. Using Unity and other game development tools, I enjoy creating engaging and visually stunning games that provide entertainment and challenge to users. The blend of creativity, logic, and technical skill required in game development keeps me constantly motivated and eager to learn more."
+    },
+    "experience": {
+        "title": "Experience",
+        "description": "With a decade of experience in iOS development, I have mastered Swift, Objective-C, and modern frameworks like Combine, SwiftUI, and ReactiveSwift. I have a proven track record of leading complex projects, including a multi-client adaptive product where I handled Authentication, Onboarding, and Profile Management. My innovative approach to code refactoring and architecture modernization is evident from my work on a marketplace app, where I transitioned from RxSwift to Combine and integrated SwiftUI with UIKit views. In another notable project, I developed a TV show recommender app, implementing a redux-like pattern for offline usage and real-time updates. My leadership skills were showcased when I guided a team to develop a financial services app, creating a network interface to handle both HTTP and SOAP backends./n/n My experience extends to full-stack development, having contributed to both front-end and back-end for a popular mobile game. I thrive in agile environments, collaborating with cross-functional teams to deliver high-quality applications. Committed to continuous learning, I stay updated with the latest iOS advancements, always striving for excellence and innovation in my work."
+    },
+    "contact": {
+        "title": "Contact",
+        "description": "Contact I am always open to exciting opportunities and collaborations. If you are looking for a passionate developer who brings a unique blend of technical expertise and creative flair, I’d love to hear from you! Let’s create something amazing together. Feel free to reach out to me via email at jwilsonrae@gmail.com or connect with me on LinkedIn. You can also check out my work on GitHub."
+    }
+}
