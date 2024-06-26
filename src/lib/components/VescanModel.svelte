@@ -4,7 +4,7 @@
     import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
     import { onMount } from 'svelte';
     import Iphone15 from '$lib/components/models/Iphone15.svelte';
-    import Tesseract from './models/Tesseract.svelte';
+    // import Tesseract from './models/Tesseract.svelte';
     import { tweened } from 'svelte/motion'
   
   const t = tweened(0, { duration: 0.1 })

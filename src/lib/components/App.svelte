@@ -112,9 +112,8 @@
   const l = lerp(start, final);
   $: x = l(progress);
 
-  $: console.log(x);
+  // $: console.log(x);
 
-  // would probably turn this into a svelte action somehow
   onMount(() => {
     ScrollTrigger.create({
       trigger,

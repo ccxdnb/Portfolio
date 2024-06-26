@@ -1,20 +1,28 @@
 <script lang="ts">
     import localizable from '../constants/Localizable.json';
+    import dondoImage from '../assets/logos/Dondo-logo.jpeg';
+    import coderioImage from '../assets/logos/Coderio-logo.jpeg';
+    import etermaxImage from '../assets/logos/etermax-logo.webp';
+    import globantImage from '../assets/logos/Globant-logo.jpeg';
+    import moovaImage from '../assets/logos/moova-logo.png';
+    import nisumImage from '../assets/logos/Nisum-logo.jpeg';
+    import solsticeImage from '../assets/logos/solstice-logo.jpg';
+    import watchworthyImage from '../assets/logos/watchworthy-logo.png';
+    import simplexImage from '../assets/logos/Simplex-logo.jpeg';
 
 let brandsImages = [
         "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/BMW.svg/768px-BMW.svg.png",
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvWZhCGdJbOYLhagkI7UO_1-MmEq1RQ5FKMQ&s",
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ6TvOxu0S0PvFLB-g8jP5Kvj1QwlVVf4B-A&s",
-        "/static/logos/Coderio-logo.jpeg",
-        "/static/logos/Dondo-logo.jpeg",
-        "/static/logos/ShapeGames-logo.jpeg",
-        "/static/logos/etermax-logo.webp",
-        "/static/logos/Globant-logo.jpeg",
-        "/static/logos/moova-logo.png",
-        "/static/logos/Nisum-logo.jpeg",
-        "/static/logos/solstice-logo.jpg",
-        "/static/logos/watchworthy-logo.png",
-        "/static/logos/Simplex-logo.jpeg",
+        dondoImage,
+        coderioImage,
+        etermaxImage,
+        globantImage,
+        moovaImage,
+        nisumImage,
+        solsticeImage,
+        watchworthyImage,
+        simplexImage,
     ]
 
 </script>
@@ -58,7 +66,7 @@ let brandsImages = [
             {#each brandsImages as image}
                 <div class="box roll-in h-24 w-24">
                     <div class="h-full w-full rounded-lg overflow-hidden bg-white">
-                        <img src="{image}" class="h-full w-full object-cover">
+                        <img src="{image}" alt="Company logo"  class="h-full w-full object-cover">
                     </div>
                 </div>
             {/each}

@@ -3,6 +3,7 @@
     import { onMount } from 'svelte';
     import gsap from 'gsap/dist/gsap';
     import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
+    import profilePic from '../assets/images/joaquinPicture.png'
 
     if (typeof window !== 'undefined') {
         gsap.registerPlugin(ScrollTrigger);
@@ -64,7 +65,7 @@
                         I’m Joaquin Wilson
                     </p>   
                     <div class="flex items-center justify-center">
-                        <img src="/static/images/joaquinPicture.png" alt="Centered Image" class="rounded-full w-20 h-20" />
+                        <img src={profilePic} alt="Centered Image" class="rounded-full w-20 h-20" />
                     </div>
                 </div>
  

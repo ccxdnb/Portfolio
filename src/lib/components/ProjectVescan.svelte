@@ -1,6 +1,7 @@
 <script lang="ts">
     import { Canvas, T } from "@threlte/core"
     import VescanModel from './VescanModel.svelte';
+    import githubIcon from '../assets/icons/github-white.svg';
 </script>
 
 <div class="flex flex-row w-full h-full space-x-10">
@@ -38,7 +39,7 @@
 
   <div class="flex items-center justify-center space-x-2">
     <a href="https://github.com/ccxdnb/VeScan" target="_blank" rel="noopener noreferrer" class="bg-white hover:rounded-xl p-2 rounded-full transition-all duration-300">
-        <img src="/static/icons/github-white.svg" alt="GitHub" class="w-12 h-12 transform transition-transform duration-300 filter invert">
+        <img src={githubIcon} alt="GitHub" class="w-12 h-12 transform transition-transform duration-300 filter invert">
     </a>
 </div>
   </div>
