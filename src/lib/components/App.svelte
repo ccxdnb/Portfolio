@@ -8,11 +8,18 @@
   </div>
 {:else}
   <div bind:this={trigger}>
-    <div style="height: 200vh" bind:this={endTrigger} class="relative">
+    <div style="height: 200vh" bind:this={endTrigger} class="relative ">
       <IndexTitle />
       <!-- <StarsBg /> -->
       <Canvas >
-
+        <T.PerspectiveCamera
+          makeDefault
+          position={[0.6, 3.4, 6]}
+          rotation={[-0.3, 0, 0]}
+          lookAt={[0, 0, 0]}
+          fov={45}
+        >
+        </T.PerspectiveCamera>
         <T.AmbientLight />
         <T.Mesh
           position={[0.1, 0.1, x]}
@@ -30,18 +37,16 @@
         </T.Mesh>
           <!-- <Tesseract /> -->
       </Canvas>
-
-      <div class="absolute top-[100vh] h-[35vh]">
+      <div class="absolute top-[100vh] w-full items-center">
         <PersonalInfo />
       </div>
-
-      <div class="relative h-[50vh]">
-        <ProjectVescan />
-        <ProjectDoggy />
-        <Experience />
-
-      </div>
     </div>
+    <div class="w-full flex flex-col justify-center gap-20 md:gap-5 sm:mx-5 md:mx-20 mb-20">
+      <ProjectVescan />
+      <ProjectDoggy />
+    </div>
+    <Experience />
+
     <section class="section" />
   </div>
 {/if}

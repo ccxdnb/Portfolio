@@ -48,7 +48,7 @@
     });
 </script>
 
-<div class="section h-screen flex flex-col items-center justify-center space-y-10 mx-[250px]
+<div class="section h-screen flex flex-col items-center justify-center space-y-10 mx-5
             transition ease-in-out delay-1000 duration-300">
     <div class="backdrop-blur-sm  
                 px-8 pb-8 pt-10 
