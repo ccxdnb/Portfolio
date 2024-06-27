@@ -1,6 +1,5 @@
 <script lang="ts">
     import { Canvas, T } from "@threlte/core"
-    import TestComponent from './TestComponent.svelte';
     import DoggyModel from './DoggyModel.svelte';
     import githubIcon from '../assets/icons/github-white.svg';
 </script>
@@ -19,18 +18,19 @@
                 fade-in
                 space-y-4">
       <div class="flex flex-row items-center justify-between"> 
-        <p class="text-2xl font-extrabold underline">
+        <p class="text-3xl font-extrabold underline">
           DoggyApp
         </p>   
         <div class="flex items-center justify-center">
         </div>
       </div>
 
-      <p class="text-1xl">
-        This is a simple exercise with the Dogs Breeds API. The main purpose is develop a simple app to show the dogs breeds and their sub breeds without using external frameworks. Allows the users to navigate through the breeds and sub breeds and see random images of the dogs.
+      <p class="text-2xl">
+        This is a simple exercise with the Dogs Breeds API. The main purpose is develop a simple app to show the dogs breeds and their sub breeds without using external frameworks. Allows the users to navigate through the breeds and sub breeds and see random images of the dogs. <br>
+        Implemented MVVM Architecture with Combine framework to keep the code decoupled and easy to maintain.
       </p>
       <p class="italic">		
-        Image cache strategy with advanced Encode/Decode capabilites to improve the app performance.
+        Also implemented Image cache strategy with advanced Encode/Decode capabilites to improve the app performance and prevent frame drops when the user scrolls through the images and providing a seamless experience.
       </p>
 
       <div class="flex items-center justify-center space-x-2">

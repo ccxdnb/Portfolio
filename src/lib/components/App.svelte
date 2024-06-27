@@ -14,7 +14,8 @@
   import ProjectDoggy from './ProjectDoggy.svelte'
   import PersonalInfo from './PersonalInfo.svelte';
   import Experience from './Experience.svelte';
-
+  import OtherInterests from './OtherInterests.svelte';
+  import Contact from './Contact.svelte';
   //--------------------------------------------
 
   const isLoading = writable(true);
@@ -103,17 +104,20 @@ repeatTimeout()
             </T.Mesh>
           {/each}
         </T.Mesh>
-          <!-- <Tesseract /> -->
       </Canvas>
       <div class="absolute top-[100vh] w-full items-center">
         <PersonalInfo />
       </div>
     </div>
-    <div class="w-full flex flex-col justify-center gap-20 md:gap-5 sm:mx-5 md:mx-20 mb-20">
+    <div class="w-full flex flex-col justify-center gap-20 sm:gap-20 md:gap-5 sm:mx-5 md:mx-20 mb-20">
       <ProjectVescan />
       <ProjectDoggy />
     </div>
-    <Experience />
+    <div class="w-full flex flex-col justify-start sm:mx-5 md:mx-20">
+      <Experience />
+      <OtherInterests />
+      <Contact />
+    </div>
 
     <section class="section" />
   </div>

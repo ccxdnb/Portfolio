@@ -22,15 +22,16 @@
                 rounded-lg                
                 fade-in
                 space-y-4">
+                
       <div class="flex flex-row items-center justify-between"> 
-        <p class="text-2xl font-extrabold underline">
+        <p class="text-3xl font-extrabold underline">
           VeScan
         </p>   
         <div class="flex items-center justify-center">
         </div>
       </div>
 
-      <p class="text-1xl">
+      <p class="text-2xl">
         This is a simple exercise with VisionKit and Natural Language and the main purpose is to determinate wether a product is vegan or not based on their ingredients. Always wanted one for myself.
       </p>
       <p class="italic">		

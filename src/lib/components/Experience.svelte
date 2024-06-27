@@ -26,7 +26,7 @@
     ];
 </script>
 
-<div class="section flex-col items-start w-full justify-start mt-40">
+<div class=" flex-col items-start w-full justify-start mt-40">
     <!-- <div class="backdrop-blur-sm  
                 px-3 pb-8 pt-10 shadow-xl border-t-2 border-green-500
                 bg-white/5 shadow-inner
@@ -51,7 +51,7 @@
     </div> -->
     <div class="flex flex-col items-center justify-center w-full max-w-6xl mx-auto gap-5 md:gap-10">
         <div class="fade-in px-3 pt-10 sm:px-20 flex flex-col space-y-10 mt-10">
-            <h1 class="justify-center text-center text-2xl md:text-4xl font-extrabold whitespace-nowrap overflow-hidden text-orange bg-gradient-to-r from-purple-600 to-slate-100 bg-clip-text text-transparent">
+            <h1 class="justify-center text-center text-3xl md:text-4xl font-extrabold overflow-hidden text-orange bg-gradient-to-r from-green-600 to-slate-100 bg-clip-text text-transparent">
                 Companies I've worked with
             </h1>
             <div class="flex flex-row flex-wrap gap-2 justify-center w-auto">

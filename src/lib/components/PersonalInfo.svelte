@@ -48,7 +48,9 @@
     });
 </script>
 
-<div class="section h-screen flex flex-col items-center justify-center space-y-10 mx-5
+<div class="section h-screen flex flex-col items-center justify-center  
+            space-y-10 sm:mx-10 md:mx-20 mx-30 lg:mx-30
+            p-10 md:p-30
             transition ease-in-out delay-1000 duration-300">
     <div class="backdrop-blur-sm  
                 px-8 pb-8 pt-10 
@@ -60,8 +62,7 @@
                 space-y-4
                 ">
                 <div class="flex flex-row items-center justify-between"> 
-
-                    <p class="text-2xl font-extrabold underline">
+                    <p class="text-3xl font-extrabold underline">
                         I’m Joaquin Wilson
                     </p>   
                     <div class="flex items-center justify-center">
@@ -69,7 +70,7 @@
                     </div>
                 </div>
  
-                <p class="text-1xl">
+                <p class="text-2xl">
                     iOS developer based in Copenhagen, Denmark.<br>
                     My journey began when I was a kid by breaking my toys just to see what was inside, which later fueled my passion for technology and led me to software development...
                 </p>
