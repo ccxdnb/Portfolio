@@ -65,13 +65,13 @@
             </div>
         </div>
     
-        <div class="section flex flex-col items-start justify-top pt-10 transition ease-in-out delay-1000 duration-300 mx-5">
+        <!-- <div class="section flex flex-col items-start justify-top pt-10 transition ease-in-out delay-1000 duration-300 mx-5">
             <div class="backdrop-blur-sm px-5 md:px-8 pb-8 pt-10 shadow-[inset_0_-10px_-10px_-10px_rgba(0,0,0,0.5)] shadow-green-600 border-[1px] border-green-500 text-gray-300 rounded-lg fade-in space-y-4"> 
-                <p class="text-1xl">
+                <p class="text-2xl">
                     {localizable.experience.description}
                 </p>
             </div>
-        </div>
+        </div> -->
     </div>
 </div>
 

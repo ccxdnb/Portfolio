@@ -1,3 +1,71 @@
+
+<script lang="ts">
+  // external dependencies
+  import { onMount } from 'svelte';
+  import gsap from 'gsap/dist/gsap';
+  import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
+  import { Canvas, T } from "@threlte/core"
+  import { tweened } from 'svelte/motion'
+  import { writable } from 'svelte/store';
+
+  // local components
+  import IndexTitle from './IndexTitle.svelte'
+  import ProjectVescan from './ProjectVescan.svelte'
+  import ProjectDoggy from './ProjectDoggy.svelte'
+  import PersonalInfo from './PersonalInfo.svelte';
+  import Experience from './Experience.svelte';
+
+  //--------------------------------------------
+
+  const isLoading = writable(true);
+
+  if (typeof window !== 'undefined') {
+      gsap.registerPlugin(ScrollTrigger);
+  }
+
+  let trigger: HTMLElement;
+  let endTrigger: HTMLElement;
+  let progress = 0;
+  // go from -3 to 3
+  const start = -3;
+  const final = 6;
+  const lerp = (a: number, b: number) => (t: number) => a + b * t;
+  const l = lerp(start, final);
+  $: x = l(progress);
+
+  // $: console.log(x);
+
+  onMount(() => {
+    ScrollTrigger.create({
+      trigger,
+      endTrigger,
+      start: "top top",
+      onUpdate(self: ScrollTrigger) {
+        progress = self.progress;
+      }
+    });
+
+    // Simulate loading
+    setTimeout(() => {
+      isLoading.set(false);
+    }, 3000); // 3 seconds loading time
+  });
+
+  const t = tweened(0, { duration: 0.1 })
+
+function repeatTimeout() {
+  setTimeout(() => {
+	if ($t < 30000) {
+
+	}
+
+    t.set($t += 10)
+    repeatTimeout()  // Recursively call to create an infinite loop
+  }, 1)
+}
+repeatTimeout() 
+
+</script>
 {#if $isLoading}
   <div class="fade-in fade-out fixed inset-0 flex flex-col items-center justify-center bg-black text-white z-50">
   <div class="flex space-x-2 animate-pulse">
@@ -60,7 +128,7 @@
 
   .section {
     width: 100%;
-    height: 100vh;
+    height: 20vh;
   }
 
   .dot {
@@ -81,72 +149,3 @@
       }
     }
 </style>
-
-<script lang="ts">
-  // external dependencies
-  import { onMount } from 'svelte';
-  import gsap from 'gsap/dist/gsap';
-  import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
-  import { Canvas, T } from "@threlte/core"
-  import { tweened } from 'svelte/motion'
-  import { writable } from 'svelte/store';
-
-  // local components
-  import IndexTitle from './IndexTitle.svelte'
-  import ProjectVescan from './ProjectVescan.svelte'
-  import ProjectDoggy from './ProjectDoggy.svelte'
-  import PersonalInfo from './PersonalInfo.svelte';
-  import Experience from './Experience.svelte';
-
-  //--------------------------------------------
-
-  const isLoading = writable(true);
-
-  if (typeof window !== 'undefined') {
-      gsap.registerPlugin(ScrollTrigger);
-      gsap.from('.fadeIn', { y: -1000, opacity: 0, duration: 2, ease: "power1.easeInOut" });
-  }
-
-  let trigger: HTMLElement;
-  let endTrigger: HTMLElement;
-  let progress = 0;
-  // go from -3 to 3
-  const start = -3;
-  const final = 6;
-  const lerp = (a: number, b: number) => (t: number) => a + b * t;
-  const l = lerp(start, final);
-  $: x = l(progress);
-
-  // $: console.log(x);
-
-  onMount(() => {
-    ScrollTrigger.create({
-      trigger,
-      endTrigger,
-      start: "top top",
-      onUpdate(self: ScrollTrigger) {
-        progress = self.progress;
-      }
-    });
-
-    // Simulate loading
-    setTimeout(() => {
-      isLoading.set(false);
-    }, 3000); // 3 seconds loading time
-  });
-
-  const t = tweened(0, { duration: 0.1 })
-
-function repeatTimeout() {
-  setTimeout(() => {
-	if ($t < 30000) {
-
-	}
-
-    t.set($t += 10)
-    repeatTimeout()  // Recursively call to create an infinite loop
-  }, 1)
-}
-repeatTimeout() 
-
-</script>

@@ -11,8 +11,8 @@
 
 <div class="absolute mainLabel top-0 left-0 z-10 w-full">
     <div class="flex items-center justify-center h-screen space-x-3">
-        <section class="relative text-white shadow-[inset_0_10px_10px_-10px_rgba(0,0,0,0.5)] p-10">
-            <h1 class="text-5xl font-extrabold overflow-hidden text-orange bg-gradient-to-r from-green-600 to-slate-100 bg-clip-text text-transparent">
+        <section class="relative text-white shadow-[inset_0_10px_10px_-10px_rgba(0,0,0,0.5)]">
+            <h1 class="text-5xl font-extrabold overflow-hidden text-orange bg-gradient-to-r from-green-600 to-slate-100 bg-clip-text text-transparent p-10">
                 {@html localizable.mainTitle}
             </h1>
             <div class="flex mainArrow items-center justify-center animate-bounce pt-20">

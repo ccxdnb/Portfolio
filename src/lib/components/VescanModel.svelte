@@ -3,10 +3,9 @@
     import { ContactShadows, Float, Grid, OrbitControls } from '@threlte/extras'
     import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
     import { onMount } from 'svelte';
-    import Iphone15 from '$lib/components/models/Iphone15.svelte';
-    // import Tesseract from './models/Tesseract.svelte';
     import { tweened } from 'svelte/motion'
-  
+    import IPhoneCCXTest from '$lib/components/models/iPhoneCCXTest.svelte';
+
   const t = tweened(0, { duration: 0.1 })
   
   function repeatTimeout() {
@@ -29,7 +28,6 @@
   
     // would probably turn this into a svelte action somehow
     onMount(() => {
-      
       ScrollTrigger.create({
         trigger,
         endTrigger,
@@ -50,9 +48,16 @@
   </script>
   <svelte:window bind:innerWidth bind:innerHeight />
   
-  <T.PerspectiveCamera
+  <!-- <T.PerspectiveCamera
     makeDefault
     position={[0.6, 3.4, 6]}
+    rotation={[-0.3, 0, 0]}
+    lookAt={[0, 0, 0]}
+    fov={45}
+  > -->
+  <T.PerspectiveCamera
+    makeDefault
+    position={[0.6, 4, 4].map(n => n * 1.3)}
     rotation={[-0.3, 0, 0]}
     lookAt={[0, 0, 0]}
     fov={45}
@@ -60,7 +65,7 @@
   </T.PerspectiveCamera>
   
   <T.DirectionalLight
-    intensity={10}
+    intensity={3}
     color="#ffffff"
     position.x={0}
     position.y={5}
@@ -75,12 +80,9 @@
     far={2.5}
     opacity={5}
   />
-  <T.AmbientLight intensity={0.8} />
-  <T.PointLight color="#ff0000" position.x={-5} position.y={5} position.z={5} lookAt={[0, 0, 0]} />
-  <T.PointLight color="#00ff00" position.x={5} position.y={5} position.z={5} lookAt={[0, 0, 0]} />
-  <T.PointLight color="#0000ff" position.x={0} position.y={5} position.z={-5} lookAt={[0, 0, 0]} />
+  <!-- <T.AmbientLight intensity={5} /> -->
   
-  <Iphone15 
+  <!-- <Iphone15 
     position.x={0.5}
     position.y={0.2}
     position.z={1}
@@ -88,6 +90,14 @@
     scale.x={0.9}
     scale.y={0.9}
     scale.z={0.9}
+  /> -->
+  <IPhoneCCXTest
+  position.x={0.5}
+  position.y={3}
+  position.z={-3}
+  rotation.y={ -1.3 -x*0.5 }
+  scale.x={3}
+  scale.y={3}
+  scale.z={3}
   />
-  
   <!-- <Tesseract /> -->
