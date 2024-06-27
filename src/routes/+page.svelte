@@ -2,7 +2,7 @@
   import App from '$lib/components/App.svelte'
 </script>
 
-<div class="col bg-gradient-to-b from-black to-green-900">
+<div class="col bg-gradient-to-b from-black via-green-900 to-black">
   <App />
 </div>
 
