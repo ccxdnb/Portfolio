@@ -95,7 +95,7 @@
   position.x={0.5}
   position.y={3}
   position.z={-3}
-  rotation.y={ -1.3 -x*0.5 }
+  rotation.y={ -1.3 + x*0.5 }
   scale.x={3}
   scale.y={3}
   scale.z={3}
