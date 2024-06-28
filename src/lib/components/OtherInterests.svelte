@@ -17,7 +17,7 @@
     <div class="flex flex-col sm:flex-col md:flex-row">
         <h1 class="text-2xl text-gray-300">Besides coding, I'm a dedicated sound designer and music producer, merging my technical skills with my love for music.
             <br><br>
-            I am the one of the founders of the Omen Records Label in which I take care of every visual desicion such as making the artworks and planing the strategic direction of the label.
+            I am the one of the founders of the Omen Records Label in which I take care of every visual decision such as making the artworks and planing the strategic direction of the label.
             <br><br>This blend fuels my creativity, driving me to craft innovative solutions in both fields, whether it's seamless user experiences or immersive soundscapes.</h1>
     
         <div class="flex flex-col w-full h-full">   

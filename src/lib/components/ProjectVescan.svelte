@@ -4,7 +4,7 @@
   import githubIcon from '../assets/icons/github-white.svg';
 </script>
 
-<div class="flex flex-col md:flex-row items-center sm:h-full md:h-[70vh] mx-5 my-10 md:mx-0">
+<div class="flex flex-col justify-center md:flex-row items-center sm:h-full md:h-[70vh] mx-5 my-10 md:mx-0">
   <div class="fade-in duration-6000 fade-out w-full md:w-1/3 my-5 h-[70vh]">
     <Canvas>
       <VescanModel />

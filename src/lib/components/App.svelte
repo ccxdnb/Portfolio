@@ -13,9 +13,9 @@
   import ProjectVescan from './ProjectVescan.svelte'
   import ProjectDoggy from './ProjectDoggy.svelte'
   import PersonalInfo from './PersonalInfo.svelte';
-  import Experience from './Experience.svelte';
   import OtherInterests from './OtherInterests.svelte';
   import Contact from './Contact.svelte';
+  import CompanySlider from './CompanySlider.svelte';
   //--------------------------------------------
 
   const isLoading = writable(true);
@@ -114,7 +114,9 @@ repeatTimeout()
       <ProjectDoggy />
     </div>
     <div class="w-full flex flex-col justify-start sm:mx-5 md:mx-20">
-      <Experience />
+      <!-- <Experience /> -->
+
+<CompanySlider />
       <OtherInterests />
       <Contact />
     </div>
